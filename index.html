@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <meta charset="utf-8">
-  <meta name="description"
-        content="ObjFiller-3D: Consistent Multi-view 3D Inpainting via Video Diffusion Models">
+  <meta name="description" content="ObjFiller-3D: Consistent Multi-view 3D Inpainting via Video Diffusion Models">
   <meta name="keywords" content="ObjFiller-3D, 3DV, 3D inpainting">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>ObjFiller-3D: Consistent Multi-view 3D Inpainting via Video Diffusion Models</title>
@@ -22,15 +22,13 @@
     gtag('config', 'G-PYVRSFMDRL');
   </script>
 
-  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
-        rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
 
   <link rel="stylesheet" href="./static/css/bulma.min.css">
   <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
   <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
   <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
-  <link rel="stylesheet"
-        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
   <link rel="stylesheet" href="./static/css/index.css">
   <link rel="icon" href="./static/images/favicon.svg">
 
@@ -40,324 +38,339 @@
   <script src="./static/js/bulma-slider.min.js"></script>
   <script src="./static/js/index.js"></script>
 </head>
+
 <body>
 
 
 
-<section class="hero">
-  <div class="hero-body">
-    <div class="container is-max-desktop">
-      <div class="columns is-centered">
-        <div class="column has-text-centered">
-          <h1 class="title is-1 publication-title">ObjFiller-3D: Consistent Multi-view 3D Inpainting via Video Diffusion Models</h1>
-          <div class="is-size-5 publication-authors">
-            <span class="author-block">
-              <a>Haitang Feng</a><sup>1</sup>,</span>
-            <span class="author-block">
-              <a>Jie Liu</a><sup>1</sup>,</span>
-            <span class="author-block">
-              <a>Jie Tang</a><sup>1</sup>,
-            </span>
-            <span class="author-block">
-              <a>Gangshan Wu</a><sup>1</sup>,
-            </span>
-            <span class="author-block">
-              <a>Beiqi Chen</a><sup>2</sup>,
-            </span>
-            <span class="author-block">
-              <a>Jianhuang Lai</a><sup>3</sup>,
-            </span>
-            <span class="author-block">
-              <a>Guangcong Wang</a><sup>4</sup>
-            </span>
-          </div>
-
-          <div class="is-size-5 publication-authors">
-            <span class="author-block"><sup>1</sup>Nanjing University,</span>
-            <span class="author-block"><sup>2</sup>Harbin Institute of Technology,</span>
-            <span class="author-block"><sup>3</sup>Sun Yat-sen University,</span>
-            <span class="author-block"><sup>4</sup>Great Bay University</span>
-
-          </div>
-
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
           <div class="column has-text-centered">
-            <div class="publication-links">
-              <!-- PDF Link. -->
-              <span class="link-block">
-                <a href=""
-                   class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                      <i class="fas fa-file-pdf"></i>
-                  </span>
-                  <span>Paper</span>
-                </a>
+            <h1 class="title is-1 publication-title">ObjFiller-3D: Consistent Multi-view 3D Inpainting via Video
+              Diffusion Models</h1>
+            <div class="is-size-5 publication-authors">
+              <span class="author-block">
+                <a href="https://objfiller3d.github.io/">Haitang Feng</a><sup>1</sup>,</span>
+              <span class="author-block">
+                <a href="https://njulj.github.io/">Jie Liu</a><sup>1</sup>,</span>
+              <span class="author-block">
+                <a href="https://tangjie-njucs.github.io/">Jie Tang</a><sup>1</sup>,
               </span>
-              <span class="link-block">
-                <a href=""
-                   class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                      <i class="ai ai-arxiv"></i>
-                  </span>
-                  <span>arXiv</span>
-                </a>
+              <span class="author-block">
+                <a href="https://mcg.nju.edu.cn/member/gswu/index.html">Gangshan Wu</a><sup>1</sup>,
               </span>
-              <!-- Video Link. -->
-              <span class="link-block">
-                <a href="https://youtu.be/0YZoKtpvqHY"
-                   class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                      <i class="fab fa-youtube"></i>
-                  </span>
-                  <span>Video</span>
-                </a>
+              <span class="author-block">
+                <a href="https://objfiller3d.github.io/">Beiqi Chen</a><sup>3</sup>,
               </span>
-              <!-- Code Link. -->
-              <span class="link-block">
-                <a href="https://github.com/objfiller3d/ObjFiller-3D"
-                   class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                      <i class="fab fa-github"></i>
-                  </span>
-                  <span>Code</span>
-                  </a>
+              <span class="author-block">
+                <a href="https://cse.sysu.edu.cn/teacher/LaiJianhuang">Jianhuang Lai</a><sup>4</sup>,
               </span>
-              <!-- Dataset Link. -->
-              <span class="link-block">
-                <a href=""
-                   class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                      <i class="far fa-images"></i>
-                  </span>
-                  <span>Data</span>
-                  </a>
+              <span class="author-block">
+                <a href="https://wanggcong.github.io/">Guangcong Wang</a><sup>2</sup>
+              </span>
             </div>
 
+            <div class="is-size-5 publication-authors">
+              <span class="author-block"><sup>1</sup>Nanjing University,</span>
+              <span class="author-block"><sup>2</sup>Great Bay University,</span>
+              <span class="author-block"><sup>3</sup>Harbin Institute of Technology,</span>
+              <span class="author-block"><sup>4</sup>Sun Yat-sen University</span>
+            </div>
+
+            <div class="column has-text-centered">
+              <div class="publication-links">
+                <!-- PDF Link. -->
+                <span class="link-block">
+                  <a href="" class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                    </span>
+                    <span>Paper</span>
+                  </a>
+                </span>
+                <span class="link-block">
+                  <a href="" class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="ai ai-arxiv"></i>
+                    </span>
+                    <span>arXiv</span>
+                  </a>
+                </span>
+                <!-- Video Link. -->
+                <span class="link-block">
+                  <a href="https://youtu.be/0YZoKtpvqHY" class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fab fa-youtube"></i>
+                    </span>
+                    <span>Video</span>
+                  </a>
+                </span>
+                <!-- Code Link. -->
+                <span class="link-block">
+                  <a href="https://github.com/objfiller3d/ObjFiller-3D"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fab fa-github"></i>
+                    </span>
+                    <span>Code</span>
+                  </a>
+                </span>
+                <!-- Dataset Link. -->
+                <span class="link-block">
+                  <a href="" class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="far fa-images"></i>
+                    </span>
+                    <span>Data</span>
+                  </a>
+              </div>
+
+            </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<section class="hero teaser">
-  <div class="container is-max-desktop">
+  <section class="hero teaser">
+    <div class="container is-max-desktop">
+      <div class="hero-body">
+        <h2 class="subtitle has-text-centered">
+          <span class="dnerf">TL;DR:</span> ObjFiller-3D completes missing regions of 3D Object via an off-the-shelf
+          video editing model.
+        </h2>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="hero is-light is-small">
     <div class="hero-body">
-      <h2 class="subtitle has-text-centered">
-        <span class="dnerf">TL;DR:</span> ObjFiller-3D completes missing regions of 3D Object via an off-the-shelf video editing model.
-      </h2>
-    </div>
-  </div>
-</section>
-
-
-<section class="hero is-light is-small">
-  <div class="hero-body">
-    <div class="container">
-      <div class="has-text-centered mb-5">
-        <p class="subtitle is-6">We mark missing regions in pink and use <strong>ObjFiller-3D</strong> to complete these areas.</p>
+      <div class="container">
+        <div class="has-text-centered mb-5">
+          <p class="subtitle is-6">We mark missing regions in pink and use <strong>ObjFiller-3D</strong> to complete
+            these areas.</p>
         </div>
 
-      <div id="results-carousel" class="carousel results-carousel">
-        <div class="item item-steve">
-          <video poster="" id="steve" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/chair.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-chair-tp">
-          <video poster="" id="chair-tp" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/drums.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-shiba">
-            <video poster="" id="shiba" autoplay controls muted loop playsinline height="100%">
-              <source src="./static/videos/ficus.mp4"
-                      type="video/mp4">
+        <div id="results-carousel" class="carousel results-carousel">
+          <div class="item item-steve">
+            <video poster="" id="steve" autoplay controls muted loop playsinline height="100%">
+              <source src="./static/videos/chair.mp4" type="video/mp4">
             </video>
-        </div>
-        <div class="item item-shiba">
-          <video poster="" id="shiba" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/hotdog.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-fullbody">
-          <video poster="" id="fullbody" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/lego.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-blueshirt">
-          <video poster="" id="blueshirt" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/materials.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-mask">
-          <video poster="" id="mask" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/mic.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-coffee">
-          <video poster="" id="coffee" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/ship.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-
-<section class="section">
-  <div class="container is-max-desktop">
-    <!-- Abstract. -->
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <h2 class="title is-3">Abstract</h2>
-        <div class="content has-text-justified">
-          <p>
-            3D inpainting often relies on multi-view 2D image inpainting, where the inherent inconsistencies across different inpainted views can result in blurred textures, spatial discontinuities, and distracting visual artifacts. 
-            These inconsistencies pose significant challenges when striving for accurate and realistic 3D object completion, particularly in applications that demand high fidelity and structural coherence. 
-            To overcome these limitations, we propose ObjFiller-3D, a novel method designed for the completion and editing of high-quality and consistent 3D objects. 
-            Instead of employing a conventional 2D image inpainting model, our approach leverages a curated selection of state-of-the-art video editing model to fill in the masked regions of 3D objects. 
-            We analyze the representation gap between 3D and videos, and propose an adaptation of a video inpainting model for 3D scene inpainting. 
-            In addition, we introduce a reference-based 3D inpainting method to further enhance the quality of reconstruction. 
-            Experiments across diverse datasets show that compared to previous methods, ObjFiller-3D produces more faithful and fine-grained reconstructions (PSNR of 26.6 vs. NeRFiller (15.9) and LPIPS of 0.19 vs. Instant3dit (0.25)). 
-            Moreover, it demonstrates strong potential for practical deployment in real-world 3D editing applications.
-          </p>
+          </div>
+          <div class="item item-chair-tp">
+            <video poster="" id="chair-tp" autoplay controls muted loop playsinline height="100%">
+              <source src="./static/videos/drums.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="item item-shiba">
+            <video poster="" id="shiba" autoplay controls muted loop playsinline height="100%">
+              <source src="./static/videos/ficus.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="item item-shiba">
+            <video poster="" id="shiba" autoplay controls muted loop playsinline height="100%">
+              <source src="./static/videos/hotdog.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="item item-fullbody">
+            <video poster="" id="fullbody" autoplay controls muted loop playsinline height="100%">
+              <source src="./static/videos/lego.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="item item-blueshirt">
+            <video poster="" id="blueshirt" autoplay controls muted loop playsinline height="100%">
+              <source src="./static/videos/materials.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="item item-mask">
+            <video poster="" id="mask" autoplay controls muted loop playsinline height="100%">
+              <source src="./static/videos/mic.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="item item-coffee">
+            <video poster="" id="coffee" autoplay controls muted loop playsinline height="100%">
+              <source src="./static/videos/ship.mp4" type="video/mp4">
+            </video>
+          </div>
         </div>
       </div>
     </div>
-    <!--/ Abstract. -->
-  </div>
-</section>
+  </section>
 
 
-<section class="section">
-  <div class="container is-max-desktop">
+  <section class="section">
+    <div class="container is-max-desktop">
+      <!-- Abstract. -->
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-3">Abstract</h2>
+          <div class="content has-text-justified">
+            <p>
+              3D inpainting often relies on multi-view 2D image inpainting, where the inherent inconsistencies across
+              different inpainted views can result in blurred textures, spatial discontinuities, and distracting visual
+              artifacts.
+              These inconsistencies pose significant challenges when striving for accurate and realistic 3D object
+              completion, particularly in applications that demand high fidelity and structural coherence.
+              To overcome these limitations, we propose ObjFiller-3D, a novel method designed for the completion and
+              editing of high-quality and consistent 3D objects.
+              Instead of employing a conventional 2D image inpainting model, our approach leverages a curated selection
+              of state-of-the-art video editing model to fill in the masked regions of 3D objects.
+              We analyze the representation gap between 3D and videos, and propose an adaptation of a video inpainting
+              model for 3D scene inpainting.
+              In addition, we introduce a reference-based 3D inpainting method to further enhance the quality of
+              reconstruction.
+              Experiments across diverse datasets show that compared to previous methods, ObjFiller-3D produces more
+              faithful and fine-grained reconstructions (PSNR of 26.6 vs. NeRFiller (15.9) and LPIPS of 0.19 vs.
+              Instant3dit (0.25)).
+              Moreover, it demonstrates strong potential for practical deployment in real-world 3D editing applications.
+            </p>
+          </div>
+        </div>
+      </div>
+      <!--/ Abstract. -->
+    </div>
+  </section>
 
-    
-    <!-- Method. -->
-    <div class="columns is-centered has-text-centered">
+
+  <section class="section">
+    <div class="container is-max-desktop">
+
+
+      <!-- Method. -->
+      <div class="columns is-centered has-text-centered">
         <div class="column is-full-width">
           <h2 class="title is-3">Method</h2>
           <div class="content has-text-justified">
             <p>
-                ObjFiller-3D performs 3D object completion through three integrated stages: 
-                generating multi-view masks via trajectory-based rendering, 
-                producing coherent inpainted frames using a fine-tuned VACE model, 
-                and reconstructing the object with NeRF, 3DGS, or LRM for high-fidelity synthesis.
+              ObjFiller-3D performs 3D object completion through three integrated stages:
+              generating multi-view masks via trajectory-based rendering,
+              producing coherent inpainted frames using a fine-tuned VACE model,
+              and reconstructing the object with NeRF, 3DGS, or LRM for high-fidelity synthesis.
             </p>
           </div>
           <div class="content has-text-centered">
             <figure>
-                <img src="/static/images/pipeline.png" alt="Method illustration">
-              </figure>              
+              <img src="/static/images/pipeline.png" alt="Method illustration">
+            </figure>
           </div>
-  
+
         </div>
       </div>
       <!--/ Method. -->
-  </div>
-</section>
+    </div>
+  </section>
 
-<section class="section">
+  <section class="section">
     <div class="columns is-centered has-text-centered">
-        <div class="column is-full-width">
-          <h2 class="title is-3">Reference-Based Inpainting</h2>
-          
-          <video poster="" id="reference" autoplay controls muted loop playsinline height="100%">
-              <source src="./static/videos/reference.mp4"
-                      type="video/mp4">
-            </video>
-  
-        </div>
-      </div>  
-</section>
+      <div class="column is-full-width">
+        <h2 class="title is-3">Reference-Based 3D Inpainting</h2>
 
-<section class="section">
+        <video poster="" id="reference" autoplay controls muted loop playsinline height="100%">
+          <source src="./static/videos/reference.mp4" type="video/mp4">
+        </video>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
     <div class="columns is-centered has-text-centered">
+      <div class="column is-full-width">
+        <h2 class="title is-3">Extend to 3D scenes</h2>
+
+        <video poster="" id="reference" autoplay controls muted loop playsinline height="100%">
+          <source src="./static/videos/billiards.mp4" type="video/mp4">
+        </video>
+        <video poster="" id="reference" autoplay controls muted loop playsinline height="100%">
+          <source src="./static/videos/drawing.mp4" type="video/mp4">
+        </video>
+        <video poster="" id="reference" autoplay controls muted loop playsinline height="100%">
+          <source src="./static/videos/norway.mp4" type="video/mp4">
+        </video>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <!-- Concurrent Work. -->
+    <div class="columns is-centered">
+      <div class="container is-max-desktop">
         <div class="column is-full-width">
-          <h2 class="title is-3">Extend to 3D scenes</h2>
-          
-          <video poster="" id="reference" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/billiards.mp4"
-                    type="video/mp4">
-          </video>
-          <video poster="" id="reference" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/drawing.mp4"
-                    type="video/mp4">
-          </video>
-          <video poster="" id="reference" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/norway.mp4"
-                    type="video/mp4">
-          </video>
-  
+          <h2 class="title is-3">Related Links</h2>
+
+          <div class="content has-text-justified">
+            <p>
+              There's a lot of excellent work that was introduced around the same time as ours.
+            </p>
+            <p>
+              Relevant works include
+              <a href="https://spinnerf3d.github.io/">SPIn-NeRF</a>,
+              <a href="https://johanan528.github.io/Infusion/">InFusion</a>,
+              <a href="https://kkennethwu.github.io/aurafusion360/">AuraFusion360</a> and
+              <a href="https://xinxinzuo2353.github.io/imfine/">IMFine</a>.
+              But these works primarily focus on removing objects from scenes.
+              In contrast, our work addresses the more general task of completing arbitrary masked regions, offering
+              greater versatility.
+            </p>
+            <p>
+              Among existing approaches, the most closely related to ours are
+              <a href="https://ethanweber.me/nerfiller/">NeRFiller</a> and
+              <a href="https://github.com/amirbarda/Instant3dit">Instant3dit</a>.
+            </p>
+          </div>
         </div>
       </div>
-</section>
+      <!--/ Concurrent Work. -->
+  </section>
 
-<section class="section">
-<!-- Concurrent Work. -->
-<div class="columns is-centered">
-    <div class="container is-max-desktop">
-        <div class="column is-full-width">
-            <h2 class="title is-3">Related Links</h2>
-      
-            <div class="content has-text-justified">
-              <p>
-                There's a lot of excellent work that was introduced around the same time as ours.
-              </p>
-              <p>
-                Relevant works include 
-                <a href="https://spinnerf3d.github.io/">SPIn-NeRF</a>, 
-                <a href="https://johanan528.github.io/Infusion/">InFusion</a>, 
-                <a href="https://kkennethwu.github.io/aurafusion360/">AuraFusion360</a> and 
-                <a href="https://xinxinzuo2353.github.io/imfine/">IMFine</a>. 
-                But these works primarily focus on removing objects from scenes. 
-                In contrast, our work addresses the more general task of completing arbitrary masked regions, offering greater versatility. 
-              </p>
-              <p>
-                Among existing approaches, the most closely related to ours are 
-                <a href="https://ethanweber.me/nerfiller/">NeRFiller</a> and 
-                <a href="https://github.com/amirbarda/Instant3dit">Instant3dit</a>. 
-              </p>
-            </div>
-          </div>
+
+
+  <section class="section" id="BibTeX">
+    <div class="container is-max-desktop content">
+      <h2 class="title">BibTeX</h2>
+      <pre><code></code></pre>
     </div>
-  <!--/ Concurrent Work. -->
-</section>
+  </section>
 
 
+  <section class="section" id="Map">
+    <div class="container is-max-desktop content" style="text-align: center;">
+      <div style="
+        display: inline-block;
+        width: 600px;
+        height: 400px;
+        overflow: hidden;
+        transform: scale(0.8);
+        transform-origin: top center;
+      ">
+        <script type="text/javascript" id="mapmyvisitors" src="//mapmyvisitors.com/map.js?d=uLLGKwIpX3aGIZETZOooqNyT1ckhTe2B768_tGqsuxY&cl=ffffff&w=a"></script>
+      </div>
+    </div>
+  </section>
+  
 
-<section class="section" id="BibTeX">
-  <div class="container is-max-desktop content">
-    <h2 class="title">BibTeX</h2>
-    <pre><code></code></pre>
-  </div>
-</section>
-
-
-<footer class="footer">
+  <footer class="footer">
     <div class="columns is-centered">
       <div class="column is-8">
         <div class="content">
           <p>
-            Our website is built upon the <a
-            href="https://github.com/nerfies/nerfies.github.io">Nerfies template</a>. 
-            Thanks to the <a
-            href="https://nerfies.github.io/">Nerfies</a> authors for providing this.
-            
+            The computational resources are supported by SongShan Lake HPC Center (SSL-HPC) in Great Bay University. 
+            This work was also supported by Guangdong Research Team for Communication and Sensing Integrated with Intelligent Computing (Project No. 2024KCXTD047).
+          </p>
+          <p>
+            Our website is built upon the <a href="https://github.com/nerfies/nerfies.github.io">Nerfies template</a>.
+            Thanks to the <a href="https://nerfies.github.io/">Nerfies</a> authors for providing this.
           </p>
         </div>
       </div>
     </div>
-  </div>
-</footer>
+    </div>
+  </footer>
 
 </body>
+
 </html>
