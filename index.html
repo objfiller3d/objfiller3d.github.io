@@ -54,7 +54,7 @@
               <span class="author-block">
                 <a href="https://objfiller3d.github.io/">Haitang Feng</a><sup>1</sup>,</span>
               <span class="author-block">
-                <a href="https://njulj.github.io/">Jie Liu</a><sup>1</sup>,</span>
+                <a href="https://njulj.github.io/">Jie Liu</a><sup>1,✉</sup>,</span>
               <span class="author-block">
                 <a href="https://tangjie-njucs.github.io/">Jie Tang</a><sup>1</sup>,
               </span>
@@ -68,7 +68,7 @@
                 <a href="https://cse.sysu.edu.cn/teacher/LaiJianhuang">Jianhuang Lai</a><sup>4</sup>,
               </span>
               <span class="author-block">
-                <a href="https://wanggcong.github.io/">Guangcong Wang</a><sup>2</sup>
+                <a href="https://wanggcong.github.io/">Guangcong Wang</a><sup>2,✉</sup>
               </span>
             </div>
 
@@ -78,12 +78,15 @@
               <span class="author-block"><sup>3</sup>Harbin Institute of Technology,</span>
               <span class="author-block"><sup>4</sup>Sun Yat-sen University</span>
             </div>
-
+            
+            <div class="is-size-5 publication-authors">
+              <sup>✉</sup>Corresponding Authors
+            </div>
             <div class="column has-text-centered">
               <div class="publication-links">
                 <!-- PDF Link. -->
                 <span class="link-block">
-                  <a href="" class="external-link button is-normal is-rounded is-dark">
+                  <a href="https://arxiv.org/pdf/2508.18271" class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
                       <i class="fas fa-file-pdf"></i>
                     </span>
@@ -91,7 +94,7 @@
                   </a>
                 </span>
                 <span class="link-block">
-                  <a href="" class="external-link button is-normal is-rounded is-dark">
+                  <a href="https://arxiv.org/abs/2508.18271" class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
                       <i class="ai ai-arxiv"></i>
                     </span>
@@ -281,13 +284,16 @@
       <div class="column is-full-width">
         <h2 class="title is-3">Extend to 3D scenes</h2>
 
-        <video poster="" id="reference" autoplay controls muted loop playsinline height="100%">
+        <!-- <video poster="" id="reference" autoplay controls muted loop playsinline height="100%">
+          <source src="./static/videos/billiards.mp4" type="video/mp4">
+        </video> -->
+        <video style="width: 58%; height: auto;" autoplay controls muted loop playsinline>
           <source src="./static/videos/billiards.mp4" type="video/mp4">
         </video>
-        <video poster="" id="reference" autoplay controls muted loop playsinline height="100%">
+        <video style="width: 58%; height: auto;" autoplay controls muted loop playsinline>
           <source src="./static/videos/drawing.mp4" type="video/mp4">
         </video>
-        <video poster="" id="reference" autoplay controls muted loop playsinline height="100%">
+        <video style="width: 58%; height: auto;" autoplay controls muted loop playsinline>
           <source src="./static/videos/norway.mp4" type="video/mp4">
         </video>
 
@@ -332,7 +338,17 @@
   <section class="section" id="BibTeX">
     <div class="container is-max-desktop content">
       <h2 class="title">BibTeX</h2>
-      <pre><code></code></pre>
+      <pre><code>
+        @misc{feng2025objfiller3dconsistentmultiview3d,
+          title={ObjFiller-3D: Consistent Multi-view 3D Inpainting via Video Diffusion Models}, 
+          author={Haitang Feng and Jie Liu and Jie Tang and Gangshan Wu and Beiqi Chen and Jianhuang Lai and Guangcong Wang},
+          year={2025},
+          eprint={2508.18271},
+          archivePrefix={arXiv},
+          primaryClass={cs.CV},
+          url={https://arxiv.org/abs/2508.18271}, 
+    }
+      </code></pre>
     </div>
   </section>
 
@@ -341,8 +357,8 @@
     <div class="container is-max-desktop content" style="text-align: center;">
       <div style="
         display: inline-block;
-        width: 600px;
-        height: 400px;
+        width: 300px;
+        height: 200px;
         overflow: hidden;
         transform: scale(0.8);
         transform-origin: top center;
@@ -359,7 +375,8 @@
         <div class="content">
           <p>
             The computational resources are supported by SongShan Lake HPC Center (SSL-HPC) in Great Bay University. 
-            This work was also supported by Guangdong Research Team for Communication and Sensing Integrated with Intelligent Computing (Project No. 2024KCXTD047).
+            This work was also supported by the Guangdong Research Team for Communication and Sensing Integrated with Intelligent Computing (Project No. 2024KCXTD047), 
+            the National Natural Science Foundation of China (Grant No. 62402211), and the Natural Science Foundation of Jiangsu Province (Grant No. BK20241248).
           </p>
           <p>
             Our website is built upon the <a href="https://github.com/nerfies/nerfies.github.io">Nerfies template</a>.
